@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1312F4252ACD01E4003E33EE /* ncmdumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312F4242ACD01E4003E33EE /* ncmdumpApp.swift */; };
+		1312F4292ACD01E5003E33EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1312F4282ACD01E5003E33EE /* Assets.xcassets */; };
+		1312F42C2ACD01E5003E33EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1312F42B2ACD01E5003E33EE /* Preview Assets.xcassets */; };
+		1312F4372ACD01E5003E33EE /* ncmdumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312F4362ACD01E5003E33EE /* ncmdumpTests.swift */; };
+		1312F4412ACD01E5003E33EE /* ncmdumpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312F4402ACD01E5003E33EE /* ncmdumpUITests.swift */; };
+		1312F4432ACD01E5003E33EE /* ncmdumpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312F4422ACD01E5003E33EE /* ncmdumpUITestsLaunchTests.swift */; };
+		137480112AD040DE00E241F9 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 137480102AD040DE00E241F9 /* CryptoSwift */; };
+		137480152AD04CC500E241F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 137480142AD04CC500E241F9 /* Info.plist */; };
+		13A2F8892AD040850086DE82 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13A2F8882AD040850086DE82 /* CryptoSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1312F4332ACD01E5003E33EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1312F4192ACD01E4003E33EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1312F4202ACD01E4003E33EE;
+			remoteInfo = ncmdump;
+		};
+		1312F43D2ACD01E5003E33EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1312F4192ACD01E4003E33EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1312F4202ACD01E4003E33EE;
+			remoteInfo = ncmdump;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1312F4212ACD01E4003E33EE /* ncmdump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ncmdump.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1312F4242ACD01E4003E33EE /* ncmdumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ncmdumpApp.swift; sourceTree = "<group>"; };
+		1312F4282ACD01E5003E33EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1312F42B2ACD01E5003E33EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1312F42D2ACD01E5003E33EE /* ncmdump.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ncmdump.entitlements; sourceTree = "<group>"; };
+		1312F4322ACD01E5003E33EE /* ncmdumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ncmdumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1312F4362ACD01E5003E33EE /* ncmdumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ncmdumpTests.swift; sourceTree = "<group>"; };
+		1312F43C2ACD01E5003E33EE /* ncmdumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ncmdumpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1312F4402ACD01E5003E33EE /* ncmdumpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ncmdumpUITests.swift; sourceTree = "<group>"; };
+		1312F4422ACD01E5003E33EE /* ncmdumpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ncmdumpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		137480142AD04CC500E241F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1312F41E2ACD01E4003E33EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A2F8892AD040850086DE82 /* CryptoSwift in Frameworks */,
+				137480112AD040DE00E241F9 /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F42F2ACD01E5003E33EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F4392ACD01E5003E33EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1312F4182ACD01E4003E33EE = {
+			isa = PBXGroup;
+			children = (
+				1312F4232ACD01E4003E33EE /* ncmdump */,
+				1312F4352ACD01E5003E33EE /* ncmdumpTests */,
+				1312F43F2ACD01E5003E33EE /* ncmdumpUITests */,
+				1312F4222ACD01E4003E33EE /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		1312F4222ACD01E4003E33EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1312F4212ACD01E4003E33EE /* ncmdump.app */,
+				1312F4322ACD01E5003E33EE /* ncmdumpTests.xctest */,
+				1312F43C2ACD01E5003E33EE /* ncmdumpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1312F4232ACD01E4003E33EE /* ncmdump */ = {
+			isa = PBXGroup;
+			children = (
+				137480142AD04CC500E241F9 /* Info.plist */,
+				1312F4242ACD01E4003E33EE /* ncmdumpApp.swift */,
+				1312F4282ACD01E5003E33EE /* Assets.xcassets */,
+				1312F42D2ACD01E5003E33EE /* ncmdump.entitlements */,
+				1312F42A2ACD01E5003E33EE /* Preview Content */,
+			);
+			path = ncmdump;
+			sourceTree = "<group>";
+		};
+		1312F42A2ACD01E5003E33EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1312F42B2ACD01E5003E33EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1312F4352ACD01E5003E33EE /* ncmdumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				1312F4362ACD01E5003E33EE /* ncmdumpTests.swift */,
+			);
+			path = ncmdumpTests;
+			sourceTree = "<group>";
+		};
+		1312F43F2ACD01E5003E33EE /* ncmdumpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1312F4402ACD01E5003E33EE /* ncmdumpUITests.swift */,
+				1312F4422ACD01E5003E33EE /* ncmdumpUITestsLaunchTests.swift */,
+			);
+			path = ncmdumpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1312F4202ACD01E4003E33EE /* ncmdump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1312F4462ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdump" */;
+			buildPhases = (
+				1312F41D2ACD01E4003E33EE /* Sources */,
+				1312F41E2ACD01E4003E33EE /* Frameworks */,
+				1312F41F2ACD01E4003E33EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ncmdump;
+			packageProductDependencies = (
+				13A2F8882AD040850086DE82 /* CryptoSwift */,
+				137480102AD040DE00E241F9 /* CryptoSwift */,
+			);
+			productName = ncmdump;
+			productReference = 1312F4212ACD01E4003E33EE /* ncmdump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1312F4312ACD01E5003E33EE /* ncmdumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1312F4492ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdumpTests" */;
+			buildPhases = (
+				1312F42E2ACD01E5003E33EE /* Sources */,
+				1312F42F2ACD01E5003E33EE /* Frameworks */,
+				1312F4302ACD01E5003E33EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1312F4342ACD01E5003E33EE /* PBXTargetDependency */,
+			);
+			name = ncmdumpTests;
+			productName = ncmdumpTests;
+			productReference = 1312F4322ACD01E5003E33EE /* ncmdumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1312F43B2ACD01E5003E33EE /* ncmdumpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1312F44C2ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdumpUITests" */;
+			buildPhases = (
+				1312F4382ACD01E5003E33EE /* Sources */,
+				1312F4392ACD01E5003E33EE /* Frameworks */,
+				1312F43A2ACD01E5003E33EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1312F43E2ACD01E5003E33EE /* PBXTargetDependency */,
+			);
+			name = ncmdumpUITests;
+			productName = ncmdumpUITests;
+			productReference = 1312F43C2ACD01E5003E33EE /* ncmdumpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1312F4192ACD01E4003E33EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1312F4202ACD01E4003E33EE = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					1312F4312ACD01E5003E33EE = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 1312F4202ACD01E4003E33EE;
+					};
+					1312F43B2ACD01E5003E33EE = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 1312F4202ACD01E4003E33EE;
+					};
+				};
+			};
+			buildConfigurationList = 1312F41C2ACD01E4003E33EE /* Build configuration list for PBXProject "ncmdump" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1312F4182ACD01E4003E33EE;
+			packageReferences = (
+				1374800F2AD040DE00E241F9 /* XCLocalSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 1312F4222ACD01E4003E33EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1312F4202ACD01E4003E33EE /* ncmdump */,
+				1312F4312ACD01E5003E33EE /* ncmdumpTests */,
+				1312F43B2ACD01E5003E33EE /* ncmdumpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1312F41F2ACD01E4003E33EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1312F42C2ACD01E5003E33EE /* Preview Assets.xcassets in Resources */,
+				1312F4292ACD01E5003E33EE /* Assets.xcassets in Resources */,
+				137480152AD04CC500E241F9 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F4302ACD01E5003E33EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F43A2ACD01E5003E33EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1312F41D2ACD01E4003E33EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1312F4252ACD01E4003E33EE /* ncmdumpApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F42E2ACD01E5003E33EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1312F4372ACD01E5003E33EE /* ncmdumpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1312F4382ACD01E5003E33EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1312F4412ACD01E5003E33EE /* ncmdumpUITests.swift in Sources */,
+				1312F4432ACD01E5003E33EE /* ncmdumpUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1312F4342ACD01E5003E33EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1312F4202ACD01E4003E33EE /* ncmdump */;
+			targetProxy = 1312F4332ACD01E5003E33EE /* PBXContainerItemProxy */;
+		};
+		1312F43E2ACD01E5003E33EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1312F4202ACD01E4003E33EE /* ncmdump */;
+			targetProxy = 1312F43D2ACD01E5003E33EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1312F4442ACD01E5003E33EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1312F4452ACD01E5003E33EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1312F4472ACD01E5003E33EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ncmdump/ncmdump.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ncmdump/Preview Content\"";
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ncmdump/Info.plist;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(PRODUCT_NAME) needs access to your documents folder to read and write files.";
+				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "$(PRODUCT_NAME) needs access to know if a file provider is installed.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdump;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1312F4482ACD01E5003E33EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ncmdump/ncmdump.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ncmdump/Preview Content\"";
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ncmdump/Info.plist;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(PRODUCT_NAME) needs access to your documents folder to read and write files.";
+				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "$(PRODUCT_NAME) needs access to know if a file provider is installed.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdump;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1312F44A2ACD01E5003E33EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdumpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ncmdump.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ncmdump";
+			};
+			name = Debug;
+		};
+		1312F44B2ACD01E5003E33EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdumpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ncmdump.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ncmdump";
+			};
+			name = Release;
+		};
+		1312F44D2ACD01E5003E33EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdumpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ncmdump;
+			};
+			name = Debug;
+		};
+		1312F44E2ACD01E5003E33EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XGVMA8YWR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chenway.ncmdumpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ncmdump;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1312F41C2ACD01E4003E33EE /* Build configuration list for PBXProject "ncmdump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1312F4442ACD01E5003E33EE /* Debug */,
+				1312F4452ACD01E5003E33EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1312F4462ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1312F4472ACD01E5003E33EE /* Debug */,
+				1312F4482ACD01E5003E33EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1312F4492ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1312F44A2ACD01E5003E33EE /* Debug */,
+				1312F44B2ACD01E5003E33EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1312F44C2ACD01E5003E33EE /* Build configuration list for PBXNativeTarget "ncmdumpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1312F44D2ACD01E5003E33EE /* Debug */,
+				1312F44E2ACD01E5003E33EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1374800F2AD040DE00E241F9 /* XCLocalSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CryptoSwift;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		137480102AD040DE00E241F9 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CryptoSwift;
+		};
+		13A2F8882AD040850086DE82 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1312F4192ACD01E4003E33EE /* Project object */;
+}
