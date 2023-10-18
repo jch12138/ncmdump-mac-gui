@@ -5,7 +5,7 @@ mac平台下将网易云ncm格式转换为mp3/flac的小工具
 v0.0.3 添加应用logo
 v0.0.2 添加批量处理功能，可以在文件浏览器中选中多个文件，也可以直接将多个文件拖入窗口，背景增加了磨砂玻璃效果
 
-# [点击下载](https://github.com/jch12138/ncmdump-mac-gui/releases/download/0.0.2/ncmdump.app.zip)
+# [点击下载](https://github.com/jch12138/ncmdump-mac-gui/releases/download/0.0.3/ncmdump.app.zip)
 
 如有以下提示。    
 
