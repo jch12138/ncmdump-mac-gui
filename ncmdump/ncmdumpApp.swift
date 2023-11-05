@@ -142,43 +142,109 @@ func calculateKeyBox(keyData: Data) -> [UInt8] {
 
 //let filePath = "/Users/chenway/Music/网易云音乐/珂拉琪 - 万千花蕊慈母悲哀.ncm"
 //_ = dump(filePath: filePath)
+struct VisualEffectView: NSViewRepresentable {
+    func makeNSView(context: NSViewRepresentableContext<VisualEffectView>) -> NSVisualEffectView {
+        let view = NSVisualEffectView()
+
+        view.material = .fullScreenUI
+        
+        view.blendingMode = .behindWindow
+        view.state = .active
+        return view
+    }
+
+    func updateNSView(_ nsView: NSVisualEffectView, context: NSViewRepresentableContext<VisualEffectView>) {
+        // Leave this empty
+    }
+}
+
+
+func makeNSView(context: NSViewRepresentableContext<VisualEffectView>) -> NSVisualEffectView {
+    let view = NSVisualEffectView()
+    
+    view.material = .fullScreenUI
+    
+    view.blendingMode = .behindWindow
+    view.state = .active
+    return view
+}
+
 
 
 struct ContentView: View {
     @State private var status: String = "Ready!"
     
     var body: some View {
-        Button("选择文件") {
-            let panel = NSOpenPanel()
-            panel.allowsMultipleSelection = false
-            panel.canChooseDirectories = false
-            panel.canCreateDirectories = false
-            panel.canChooseFiles = true
-            if panel.runModal() == .OK {
-                if let url = panel.url {
-                    self.status = "Running..."
-                    DispatchQueue.global().async {
-                                    self.handleFile(at: url)
+        ZStack {
+            VisualEffectView()
+                .onDrop(of: [.fileURL], isTargeted: nil) { providers -> Bool in
+                                for provider in providers {
+                                    provider.loadItem(forTypeIdentifier: kUTTypeFileURL as String, options: nil) { (urlData, error) in
+                                        DispatchQueue.main.async {
+                                            if let urlData = urlData as? Data {
+                                                let url = NSURL(absoluteURLWithDataRepresentation: urlData, relativeTo: nil) as URL
+                                                print(url)
+                                                let pathExtension = url.pathExtension
+                                                if pathExtension == "ncm" {
+                                                    self.status = "Running..."
+                                                    DispatchQueue.global().async {
+                                                        self.handleFile(at: url)
+                                                        DispatchQueue.main.async {
+                                                            self.status = "Done^_^"
+                                                        }
+                                                    }
+                                                } else {
+                                                    self.status = "Invalid file type"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                return true
+                            }
+            
+            VStack {
+                Button("选择文件") {
+                    let panel = NSOpenPanel()
+                    panel.allowsMultipleSelection = true
+                    panel.canChooseDirectories = false
+                    panel.canCreateDirectories = false
+                    panel.canChooseFiles = true
+                    panel.allowedFileTypes = ["ncm"]
+                    
+                    if (panel.runModal() == NSApplication.ModalResponse.OK) {
+                        let result = panel.urls // 这是一个包含所有选定文件 URL 的数组
+
+                        if (result.count > 0) {
+                            for path in result {
+                                print(path)
+                                self.status = "Running..."
+                                DispatchQueue.global().async {
+                                    self.handleFile(at: path)
                                     DispatchQueue.main.async {
                                         self.status = "Done^_^"
                                     }
                                 }
+                            }
+                        }
+                    } else {
+                        // 用户点击了取消
+                    }
                 }
+                
+                Text(status).padding()
             }
-        }
-        
-        Text(status).padding()
 
+        }
     }
     
     func handleFile(at url: URL) {
-        // 在这里添加你的文件处理代码
-        
         _ = dump(filePath: url.path)
-        
-
     }
 }
+
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -194,3 +260,4 @@ struct YourApp: App {
         }
     }
 }
+
