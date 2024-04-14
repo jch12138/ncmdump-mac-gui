@@ -5,17 +5,6 @@
 //  Created by 蒋晨辉 on 10/4/23.
 //
 
-//import SwiftUI
-//
-//@main
-//struct ncmdumpApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ViewController()
-//        }
-//    }
-//}
-
 import SwiftUI
 
 import Foundation
@@ -77,7 +66,7 @@ func dump(filePath: String) -> String {
     let imageSize = bytesToUInt32(Array(fileData[offset..<offset+4]))
 
     offset += 4
-    let imageData = fileData[offset..<offset+Int(imageSize)]
+    _ = fileData[offset..<offset+Int(imageSize)]
     offset += Int(imageSize)
     let fileName = (filePath as NSString).lastPathComponent.replacingOccurrences(of: ".ncm", with: ".\(metaDataJson["format"] as! String)")
     let outputPath = (filePath as NSString).deletingLastPathComponent + "/" + fileName
@@ -140,8 +129,6 @@ func calculateKeyBox(keyData: Data) -> [UInt8] {
     return keyBox
 }
 
-//let filePath = "/Users/chenway/Music/网易云音乐/珂拉琪 - 万千花蕊慈母悲哀.ncm"
-//_ = dump(filePath: filePath)
 struct VisualEffectView: NSViewRepresentable {
     func makeNSView(context: NSViewRepresentableContext<VisualEffectView>) -> NSVisualEffectView {
         let view = NSVisualEffectView()
@@ -172,37 +159,11 @@ func makeNSView(context: NSViewRepresentableContext<VisualEffectView>) -> NSVisu
 
 
 struct ContentView: View {
-    @State private var status: String = "Ready!"
-    
+    @State private var fileName: String = ""
+    @State private var fileStatus: String = "就绪"
+
     var body: some View {
         ZStack {
-            VisualEffectView()
-                .onDrop(of: [.fileURL], isTargeted: nil) { providers -> Bool in
-                                for provider in providers {
-                                    provider.loadItem(forTypeIdentifier: kUTTypeFileURL as String, options: nil) { (urlData, error) in
-                                        DispatchQueue.main.async {
-                                            if let urlData = urlData as? Data {
-                                                let url = NSURL(absoluteURLWithDataRepresentation: urlData, relativeTo: nil) as URL
-                                                print(url)
-                                                let pathExtension = url.pathExtension
-                                                if pathExtension == "ncm" {
-                                                    self.status = "Running..."
-                                                    DispatchQueue.global().async {
-                                                        self.handleFile(at: url)
-                                                        DispatchQueue.main.async {
-                                                            self.status = "Done^_^"
-                                                        }
-                                                    }
-                                                } else {
-                                                    self.status = "Invalid file type"
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                return true
-                            }
-            
             VStack {
                 Button("选择文件") {
                     let panel = NSOpenPanel()
@@ -218,22 +179,20 @@ struct ContentView: View {
                         if (result.count > 0) {
                             for path in result {
                                 print(path)
-                                self.status = "Running..."
+                                self.fileName = path.lastPathComponent
+                                self.fileStatus = "处理中"
                                 DispatchQueue.global().async {
                                     self.handleFile(at: path)
                                     DispatchQueue.main.async {
-                                        self.status = "Done^_^"
+                                        self.fileStatus = "完成"
                                     }
                                 }
                             }
                         }
-                    } else {
-                        // 用户点击了取消
                     }
                 }
                 
-                Text(status).padding()
-            }
+                Text("\(fileName) \(fileStatus)").padding()            }
 
         }
     }
@@ -254,10 +213,36 @@ struct ContentView_Previews: PreviewProvider {
 
 @main
 struct YourApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        // 可能需要检查是否有通过特定方式传递的文件路径等
+        // 设置所有窗口的大小
+        for window in NSApplication.shared.windows {
+            window.setContentSize(NSSize(width: 300, height: 200))
+        }
+    }
+
+    func application(_ application: NSApplication, open urls: [URL]) {
+        for url in urls {
+            print("开始处理文件：\(url.path)")
+            let result = handleFile(at: url)
+            print("文件处理完成：\(result)")
+        }
+        NSApplication.shared.terminate(nil) // 处理完毕后退出应用
+    }
+
+    private func handleFile(at url: URL) -> String {
+        // 调用之前定义的 dump 函数处理文件
+        return dump(filePath: url.path)
     }
 }
 
